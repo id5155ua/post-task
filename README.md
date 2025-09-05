@@ -77,7 +77,10 @@ npm install && npm run build
 ```
 
 ## 5. Запуск локального сервера
-
+Згенеруємо документацію Swagger (openAPI)
+```bash
+ php artisan l5-swagger:generate
+```
 Якщо ви не використовуєте Laravel Valet або Herd, можна використати вбудований сервер Laravel:
 ```bash
 php artisan serve
@@ -89,7 +92,7 @@ http://localhost:8000
 Якщо темна версія Swagger не подобається, то встановіть змінну ```L5_SWAGGER_UI_DARK_MODE``` у файлі ```.env``` на false
 
 Інтерактивна документація Swagger доступна за посиланням:
-http://127.0.0.1:8000/api/documentation#/
+http://localhost:8000/api/documentation#/
 ## 7. Зворотний зв’язок
 
 Буду радий отримати ваш фідбек будь-яким зручним способом:
