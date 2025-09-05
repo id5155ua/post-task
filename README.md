@@ -18,14 +18,14 @@ cd <STORAGE_FOLDER_NAME>
 cp .env.example .env
 ```
 
-Генеруємо ключ додатку
-```bash
-php artisan key:generate
-```
-
 Встановлюємо PHP-залежності
 ```bash
 composer install
+```
+
+Генеруємо ключ додатку
+```bash
+php artisan key:generate
 ```
 
 ## 3. Налаштування бази даних
