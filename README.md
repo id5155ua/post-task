@@ -31,10 +31,14 @@ php artisan key:generate
 ## 3. Налаштування бази даних
 Варіант A — SQLite (швидко та просто, але без підтримки emoji)
 
-у файлі .env вказати шлях до нового файлу database.sqlite
+у файлі .env
 ```bash
 DB_CONNECTION=sqlite
 DB_DATABASE=
+#DB_HOST=
+#DB_PORT=
+#DB_USERNAME=
+#DB_PASSWORD=
 ```
 Варіант B — MySQL (підтримує emoji)
 
@@ -80,7 +84,7 @@ php artisan serve
 ```
 
 Проєкт буде доступний за адресою:
-http://127.0.0.1:8000
+http://localhost:8000
 ## 6. Документація API
 Якщо темна версія Swagger не подобається, то встановіть змінну ```L5_SWAGGER_UI_DARK_MODE``` у файлі ```.env``` на false
 
